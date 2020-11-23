@@ -1,0 +1,20 @@
+﻿<Window x:Class="MinutesGenerationApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MinutesGenerationApp"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:vm="clr-namespace:MinutesGenerationApp.ViewModel"
+        mc:Ignorable="d"
+        Title="ぎじろくめんどい" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="ToolWindow">
+    <Window.DataContext>
+        <vm:MainViewModel/>
+    </Window.DataContext>
+    <Grid Background="#9ADAD2">
+        <TextBox HorizontalAlignment="Left" Height="230" Margin="40,105,0,0" TextWrapping="Wrap" Text="aaaa" VerticalAlignment="Top" Width="715" Foreground="#2A383D"/>
+        <Button Content="はじめ" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" Width="160" Height="60" Background="#1FB09F" Foreground="#E4DFD4" FontSize="36"/>
+        <Button Content="とめる" HorizontalAlignment="Left" Margin="240,20,0,0" VerticalAlignment="Top" Width="160" Height="60" Background="#1FB09F" Foreground="#E4DFD4" FontSize="36"/>
+        <Button Content="しゅつりょく" HorizontalAlignment="Left" Margin="575,361,0,0" VerticalAlignment="Top" Width="180" Height="34" Background="#1FB09F" Foreground="#E4DFD4" FontSize="20"/>
+    </Grid>
+</Window>
