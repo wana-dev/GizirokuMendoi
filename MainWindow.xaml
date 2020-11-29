@@ -12,9 +12,9 @@
         <vm:MainViewModel/>
     </Window.DataContext>
     <Grid Background="#9ADAD2">
-        <TextBox HorizontalAlignment="Left" Height="230" Margin="40,105,0,0" TextWrapping="Wrap" Text="aaaa" VerticalAlignment="Top" Width="715" Foreground="#2A383D"/>
-        <Button Content="はじめ" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" Width="160" Height="60" Background="#1FB09F" Foreground="#E4DFD4" FontSize="36"/>
-        <Button Content="とめる" HorizontalAlignment="Left" Margin="240,20,0,0" VerticalAlignment="Top" Width="160" Height="60" Background="#1FB09F" Foreground="#E4DFD4" FontSize="36"/>
-        <Button Content="しゅつりょく" HorizontalAlignment="Left" Margin="575,361,0,0" VerticalAlignment="Top" Width="180" Height="34" Background="#1FB09F" Foreground="#E4DFD4" FontSize="20"/>
+        <TextBox HorizontalAlignment="Left" Height="230" Margin="40,105,0,0" TextWrapping="Wrap" Text="{Binding MinutesText}" VerticalAlignment="Top" Width="715" Foreground="#2A383D" IsReadOnly="True"/>
+        <Button Content="はじめ" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" Width="160" Height="60" Background="#1FB09F" Foreground="#E4DFD4" FontSize="36" Command="{Binding StartCommand}"/>
+        <Button Content="とめる" HorizontalAlignment="Left" Margin="240,20,0,0" VerticalAlignment="Top" Width="160" Height="60" Background="#1FB09F" Foreground="#E4DFD4" FontSize="36" Command="{Binding StopCommand}"/>
+        <Button Content="しゅつりょく" HorizontalAlignment="Left" Margin="575,361,0,0" VerticalAlignment="Top" Width="180" Height="34" Background="#1FB09F" Foreground="#E4DFD4" FontSize="20" Command="{Binding OutputCommand}"/>
     </Grid>
 </Window>
